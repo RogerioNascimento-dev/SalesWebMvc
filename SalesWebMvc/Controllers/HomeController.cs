@@ -6,7 +6,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
-
+using SalesWebMvc.Models.ViewModels;
 namespace SalesWebMvc.Controllers
 {
     public class HomeController : Controller
@@ -24,6 +24,11 @@ namespace SalesWebMvc.Controllers
         }
 
         public IActionResult Privacy()
+        {
+            return View();
+        }
+
+        public IActionResult About()
         {
             return View();
         }
