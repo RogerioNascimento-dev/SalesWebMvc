@@ -12,9 +12,9 @@ namespace SalesWebMvc.Models
         public Seller Seller { get; set; }
 
         public SallesRecord() { }
-        public SallesRecord(int id, DateTime date, double amount, SalleStatus status, Seller seller)
+        public SallesRecord(DateTime date, double amount, SalleStatus status, Seller seller)
         {
-            Id = id;
+            
             Date = date;
             Amount = amount;
             Status = status;
